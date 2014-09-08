@@ -1,0 +1,1250 @@
+*
+{
+    margin : 0;
+    padding : 0;
+}
+
+*,
+*:before,
+*:after
+
+{
+    -moz-box-sizing : border-box;
+    -webkit-box-sizing : border-box;
+    box-sizing : border-box;
+}
+
+/* ----------------------------РАСПОЛОЖЕНИЕ БЛОКОВ----------------------------*/
+
+.wrapper
+{
+    min-width : 1024px;
+    max-width : 1280px;
+    margin : auto;
+}
+
+.grid
+{
+    min-width : 1024px;
+    max-width : 1280px;
+    overflow : hidden;
+    margin : 0 20px;
+}
+
+.footer
+{
+    height : 90px;
+    background : #0d6fc7;
+    background : -moz-linear-gradient(top, #0d6fc7, #215190);
+    background : -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0d6fc7), color-stop(100%,#215190));
+    background : -webkit-linear-gradient(top, #0d6fc7, #215190);
+    background : -o-linear-gradient(top, #0d6fc7, #215190);
+    background : -ms-linear-gradient(top, #0d6fc7, #215190);
+    background : linear-gradient(top, #0d6fc7, #215190);
+    -ms-filter : "progid : DXImageTransform.Microsoft.gradient(startColorstr='#0d6fc7', endColorstr='#215190', GradientType=0)";
+    position : relative;
+    bottom : 0;
+    display : block;
+    margin-top : -90px;
+    min-width : 1024px;
+    max-width : 100%;
+}
+
+.content
+{
+    min-height : 100%;
+    padding-bottom : 90px;
+}
+
+.footer .grid
+{
+    min-width : 1024px;
+    max-width : 1280px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+[class*='col-']
+{
+    float : left;
+}
+
+.col-1-4
+{
+    width : 24%;
+}
+
+.col-3-4
+{
+    width : 76%;
+    position: relative;
+}
+
+.col-7-10
+{
+    width : 68%;
+}
+
+.col-3-10
+{
+    width : 30%;
+}
+
+.col-1-1
+{
+    width : 97%;
+}
+
+/*----------------------------Позиционирование элементов в блоках----------------------------*/
+/* ----------------------------HEADER----------------------------*/
+
+.header
+{
+     max-width : 1100px;
+     margin : auto;
+}
+
+.logo
+{
+    
+    margin : 41px 0 0 50px;
+    display : inline-block;
+}
+
+a.logotip
+{
+	font: 32px normal georgia, "Times New Roman", times, serif;
+	color : #0d6fc7;
+	line-height: 1em;
+	display : inline-block;
+	width: 110px;
+}
+
+a.logotip:hover
+{
+	text-decoration : none;
+}
+
+.logotip span
+{
+	font-size : 36px;
+	display : inline-block;
+	padding: 0 8px;
+}
+
+.h-wrap
+{
+    max-width: 770px;
+}
+
+/*----------------------------navigation----------------------------*/
+
+.nav-wrap
+{
+    height : 150px;
+    width : 755px;
+    background : url(images/header-bg.jpg) no-repeat;
+}
+
+.nav
+{
+    display : block;
+    position : relative;
+    top : 118px;
+}
+
+.nav>ul
+{
+    max-width : 780px;
+    height : 44px;
+    background : #0d6fc7;
+    background : -moz-linear-gradient(top, #0d6fc7, #215190);
+    background : -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0d6fc7), color-stop(100%,#215190));
+    background : -webkit-linear-gradient(top, #0d6fc7, #215190);
+    background : -o-linear-gradient(top, #0d6fc7, #215190);
+    background : -ms-linear-gradient(top, #0d6fc7, #215190);
+    background : linear-gradient(top, #0d6fc7, #215190);
+    -ms-filter : "progid : DXImageTransform.Microsoft.gradient(startColorstr='#0d6fc7', endColorstr='#215190', GradientType=0)";
+    -webkit-border-radius : 8px;
+    -moz-border-radius : 8px;
+    -khtml-border-radius : 8px;
+    border-radius : 8px;
+    margin : -15px;
+}
+
+.nav>ul>li
+{
+    display : block;
+    float : left;
+}
+
+/*----------------------------Выпадающее меню----------------------------*/
+
+.nav-about-company
+{
+    position : absolute;
+    top : 100%;
+    visibility : hidden;
+    margin-left : 20px;
+    height : 30px;
+    background-color : #dce2ee;
+    border-radius : 0 0 8px 8px;
+    padding : 0 7px;
+}
+
+.nav-about-company li
+{
+    padding : 6px 0;
+    display : inline-block;
+}
+
+.nav-about-company li a
+{
+    color : #486da1;
+    padding : 0 17px;
+}
+
+.nav-about-company li+li:before
+{
+    content : "";
+    background : url(images/sprite-png.png) -0px -45px no-repeat;
+    display : inline-block;
+    width : 2px;
+    height : 13px;
+    vertical-align : bottom;
+}
+
+.nav>ul>li:hover .nav-about-company
+{
+   visibility : visible;
+}
+
+/*----------------------------banner----------------------------*/
+
+.banner
+{
+    border : 1px solid #e8e8e8;
+    -webkit-border-radius : 10px;
+    -moz-border-radius : 10px;
+    -khtml-border-radius : 10px;
+    border-radius : 10px;
+    width : 190px;
+    margin-top : 76px;
+}
+
+.banner p {
+    padding : 100px 75px 125px;
+    color : #e8e8e8;
+}
+
+/*----------------------------slogan----------------------------*/
+
+.slogan
+{
+    overflow : visible;/*--?--*/
+    float : right;
+    margin : 20px 0 33px;
+    position : relative;
+    right : -200px;
+    display : block;
+    width : 400px;
+    z-index : 10;
+}
+
+.slogan p
+{
+    width : 200px;
+    height : 65px;
+    background : url(images/sprite-png.png) -46px -0px  no-repeat;
+    float : left;
+    text-align : right;
+    padding : 10px 10px 12px 50px;
+    font : 18px georgia, "Times New Roman", times, serif;
+    color : #fafafa;
+}
+
+.slogan ul {
+    width : 200px;
+    height : 65px;
+    background : url(images/sprite-png.png) -250px -0px  no-repeat;
+    float : right;
+    text-align : left;
+    padding : 7px 0 0 15px;
+    color : #442c10;
+    font : 12px/1.5 georgia, "Times New Roman", times, serif;
+}
+
+.slogan ul li span
+{
+    display : inline-block;
+    width : 7px;
+    height : 7px;
+    background : url(images/sprite-png.png) -538px -0px no-repeat;
+    margin-right : 10px;
+}
+
+/*----------------------------search----------------------------*/
+
+.search
+{
+    background-color : #eeeff1;
+    width : 520px;
+    -webkit-border-radius : 10px;
+    -moz-border-radius : 10px;
+    -khtml-border-radius : 10px;
+    border-radius : 10px;
+    float : left;
+    margin-top : 49px;
+}
+
+.search p
+{
+    padding : 15px 20px 10px;
+    font : 14px georgia, "Times New Roman", times, serif;
+    color : #000;
+}
+
+.search input[placeholder]
+{
+    padding : 7px 10px;
+    font-size : 11px;
+    color : #999;
+}
+
+.search input[type="text"]
+{
+    background : #f5f5f5;
+    background : -moz-linear-gradient(top, #f5f5f5, #ededed);
+    background : -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f5f5f5), color-stop(100%,#ededed));
+    background : -webkit-linear-gradient(top, #f5f5f5, #ededed);
+    background : -o-linear-gradient(top, #f5f5f5, #ededed);
+    background : -ms-linear-gradient(top, #f5f5f5, #ededed);
+    background : linear-gradient(top, #f5f5f5, #ededed);
+    -ms-filter : "progid : DXImageTransform.Microsoft.gradient(startColorstr='#f5f5f5', endColorstr='#ededed', GradientType=0)";
+    width : 380px;
+    margin : 0px 20px 17px;
+    border : 1px solid #d8d5ce;
+    -webkit-border-radius : 5px;
+    -moz-border-radius : 5px;
+    -khtml-border-radius : 5px;
+    border-radius : 5px;
+    color : #000;
+}
+
+.search input[type="submit"]
+{
+    background : #51bd45;
+    background : -moz-linear-gradient(top, #51bd45, #08aa34);
+    background : -webkit-gradient(linear, left top, left bottom, color-stop(0%,#51bd45), color-stop(100%,#08aa34));
+    background : -webkit-linear-gradient(top, #51bd45, #08aa34);
+    background : -o-linear-gradient(top, #51bd45, #08aa34);
+    background : -ms-linear-gradient(top, #51bd45, #08aa34);
+    background : linear-gradient(top, #51bd45, #08aa34);
+    -ms-filter : "progid : DXImageTransform.Microsoft.gradient(startColorstr='#51bd45', endColorstr='#08aa34', GradientType=0)";
+    -webkit-border-radius : 4px;
+    -moz-border-radius : 4px;
+    -khtml-border-radius : 4px;
+    padding : 5px 19px 7px;
+    border-radius : 4px;
+    border : none;
+    font : 14px georgia, "Times New Roman", times, serif;
+    color : #fff;
+}
+
+/*----------------------------phone----------------------------*/
+
+.phone
+{
+     margin : 49px 0 0 25px;
+     min-width : 200px;
+}
+
+.phone .ph
+{
+    padding-left : 42px;
+    background : url(images/sprite-png.png) -546px -0px no-repeat;
+    height : 30px;
+    width : 42px;
+    display : inline-block;
+}
+
+.cont {
+    display : inline-block;
+    color : #676767;
+    padding : 10px 10px 0;
+    vertical-align : top;
+}
+
+.code
+{
+    dispalay : block;
+    margin : 7px 8px 0 0;
+    color : #b9c1c5;
+    font : 18px georgia, "Times New Roman", times, serif;
+    width : 32%;
+}
+
+.number
+{
+    display : block;
+    color : #343633;
+    font : 28px georgia, "Times New Roman", times, serif;
+    width : 68%;
+    float : right;
+}
+
+/*----------------------------breadcrumbs----------------------------*/
+
+.breadcrumbs ul li
+{
+    display : inline-block;
+}
+
+.breadcrumbs ul
+{
+    display : inline-block;
+    padding : 15px 0;
+}
+
+.breadcrumbs
+{
+    max-width : 780px;
+}
+
+.location li:after
+{
+    content : "";
+    background : url(images/sprite-png.png) -0px -0px no-repeat;
+    margin : 0 8px;
+    display : inline-block;
+    width : 3px;
+    height : 5px;
+}
+
+.location li:last-child:after {
+    content : none;
+}
+
+.crumbs
+{
+    float : right;
+}
+
+.crumbs li a
+{
+    padding : 0 16px 0 22px;
+}
+
+.crumbs li a .glavnaya
+{
+    width : 11px;
+    height : 10px;
+    background : url(images/sprite-png.png) -451px -0px no-repeat;
+    display : inline-block;
+    margin-right : 11px;
+}
+
+.crumbs li a .karta
+{
+    width : 12px;
+    height : 9px;
+    background : url(images/sprite-png.png) -608px -0px no-repeat;
+    display : inline-block;
+    margin-right : 11px;
+}
+
+.crumbs li a .letter
+{
+    width : 14px;
+    height : 9px;
+    background : url(images/sprite-png.png) -463px -0px no-repeat;
+    display : inline-block;
+    margin-right : 9px;
+}
+
+.crumbs li+li:before
+{
+    content : "";
+    background : url(images/sprite-png.png) -14px -0px no-repeat;
+    display : inline-block;
+    width : 1px;
+    height : 10px;
+}
+
+/*----------------------------slider----------------------------*/
+
+.slider-menu
+{
+    display : block;
+    height : 25px;
+    margin-bottom : 10px;
+    float : right;
+
+}
+
+.slider
+{
+    width : 100%;
+    position : relative;
+    overflow : hidden;
+}
+
+#slideshow
+{
+    width : 550px;
+    height : 266px;
+    overflow-x : scroll;
+    overflow-y : hidden;
+    float : left;
+}
+
+#slideshow ul
+{
+    width : 4590px;
+    list-style : none;
+}
+
+#slideshow ul li
+{
+    float : left;
+}
+
+#slideshow-nav
+{
+    visibility : hidden;
+    margin-top: -5px;
+}
+
+#slideshow-nav ul
+{
+    list-style : none;
+    display : inline-block;
+    width : 60%;
+    margin-top : 6px;
+    height : 32px;
+    vertical-align : bottom;
+}
+
+#slideshow-nav p
+{
+    display : inline-block;
+    width : 30%;
+    height : 35px;
+    margin-right : 6px;
+}
+
+#slideshow-nav ul li
+{
+    float : left;
+    padding-top : 13px;
+}
+
+#slideshow-nav ul li a
+{
+    display : block;
+    width : 18px;
+    height : 18px;
+    float : left;
+    margin : 0 5px;
+    text-indent : -9999px;
+    background : url(images/sprite-png.png) -590px 0 no-repeat;
+    outline : none;
+}
+
+#slideshow-nav ul li a:hover,
+#slideshow-nav ul li a.active,
+#slideshow-nav ul li a:focus
+{
+    width : 18px;
+    height : 18px;
+    background : url(images/sprite-png.png) -16px 0 no-repeat;
+}
+
+/*----------------------------MAP----------------------------*/
+
+.map
+{
+    height : 264px;
+    display : block;
+    min-width : 240px;
+    overflow : hidden;
+}
+
+.map img
+{
+    padding : 7px 0 0 15px;
+    width : 200px;
+    height : 165px;
+}
+
+.map h3
+{
+    height : 65px;
+    background : url(images/sprite-png.png) -250px -0px  no-repeat;
+    float : left;
+    text-align : left;
+    width : 200px;
+    padding : 10px 50px 12px 25px;
+    margin-bottom: 10px;
+    color : #333532;
+}
+
+.map p
+{
+    padding : 10px 30px 0 15px;
+    color : #61625d;
+}
+
+/* ----------------------------CONTENT----------------------------*/
+
+.about_company
+{
+    margin-right : 25px;
+}
+
+/*---------------------------carousel-----------------------------*/
+
+.karusel
+{
+    display : block;
+    margin : 30px 0 25px 3%;
+}
+
+.karusel h2
+{
+    margin : 0 0 25px -3%;
+}
+
+img,
+button
+{
+    border : none;
+}
+
+.b-carousel
+{
+    width : 948px;
+    margin : 0 auto;
+}
+
+.h-carousel-wrapper
+{
+    width : 548px;
+    height : 240px;
+    position : relative;
+    overflow : hidden;
+    margin : 0 auto;
+    padding : 22px 5px 19px;
+    display : inline-block;
+    background-color : #f7f7f7;
+    border-right : 1px solid #d2d2d2;
+    border-left :  1px solid #d2d2d2;
+    float : left;
+}
+
+.h-carousel-items
+{
+    width : 10000px;
+    position : relative;
+}
+
+.b-carousel-block
+{
+    display : inline-block;
+    width : 175px;
+    padding : 0 15px;
+}
+
+.b-carousel-block
+{
+    margin : 0 auto;
+}
+
+.a-carousel-image-link
+{
+    display : block;
+    width : 149px;
+    height : 149px;
+    overflow : hidden;
+}
+
+.b-carousel-button-left,
+.b-carousel-button-right
+{
+    width : 50px;
+    height : 240px;
+    background-color : #eeeff1;
+}
+
+.b-carousel-button-left
+{
+    float : left;
+    border-right : 1px solid #fff;
+}
+
+.b-carousel-button-right
+{
+    border-left : 1px solid #fff;
+    float : left;
+}
+
+.b-carousel-button-left button
+{
+    display : block;
+    margin : 100px auto 0;
+    width : 29px;
+    height : 29px;
+    background : url(images/sprite-png.png) -478px 0px no-repeat;
+    cursor : pointer;
+}
+
+.b-carousel-button-right button
+{
+    width : 29px;
+    height : 29px;
+    margin : 100px auto 0;
+    background : url(images/sprite-png.png) -508px 0px no-repeat;
+    cursor : pointer;
+    display : block;
+}
+
+.car
+{
+    width : 649px;
+    border-radius : 8px;
+    overflow : hidden;
+    height : 240px;
+}
+
+.b-carousel-block p
+{
+    padding-top : 10px;
+    text-align : center;
+    display : block;
+    min-width : 168px;
+    max-height : 45px;
+    overflow : hidden;
+}
+
+/* ----------------------------ABOUT COMPANY----------------------------*/
+
+.about_company>h3
+{
+    margin : 25px 0 20px;
+}
+
+.about_company .news-block
+{
+    width : 43%;
+    float : left;
+    margin : 25px 0 17px 30px;
+}
+
+.title
+{
+    background-color : #eeeff1;
+    border-bottom : 1px solid #d2d2d2;
+    min-width : 58px;
+}
+
+.about_company .title>h3
+{
+    display : inline-block;
+    padding : 20px;
+}
+
+.title .rss
+{
+    width : 23px;
+    height : 23px;
+    display : inline-block;
+    margin : 20px 19px 0 0;
+    float : right;
+    background : url(images/sprite-png.png) 0px -21px no-repeat;
+}
+
+.news
+{
+    padding : 0 15px 20px 16px;
+    background-color : #f7f7f7;
+    border-bottom : 1px solid #d2d2d2;
+    border-top : 1px solid #fffeff;
+}
+
+.news .date
+{
+    padding : 3px;
+    background-color : #05a833;
+    border-radius : 3px;
+    display : inline-block;
+    margin : 15px 0 5px 0;
+    color : #fff;
+    font-weight : bold;
+}
+
+.news-bottom
+{
+    background-color : #eeeff1;
+    border-top : 1px solid #fffeff;
+    min-height : 19px;
+    border-radius : 0 0 8px 8px;
+    padding : 3px 20px 8px 16px;
+}
+
+.news-bottom a+a
+{
+    float : right;
+}
+
+.news-bottom a span
+{
+    display : inline-block;
+    width : 10px;
+    height : 5px;
+    background : url(images/sprite-png.png) -4px -0px no-repeat;
+    margin-right : 5px;
+}
+
+.press h4 {
+    margin : 15px 0 7px 0;
+}
+
+.press .pdate
+{
+    margin : 0 0 4px 0;
+    color : #98a3a7;
+}
+
+/* ----------------------------RIGHT-CONTENT----------------------------*/
+
+.building_now .news-block
+{
+    margin : 17px 0;
+}
+
+.building_now .news
+{
+    min-height : 120px;
+    display : block;
+}
+
+.building_now .title
+{
+    width : 100%;
+    display : inline-block;
+    padding-right : 14px;
+}
+
+.building_now .title>img
+{
+    width : 53px;
+    height : 49px;
+    margin : 9px 10px 3px 15px;
+    display : block;
+    vertical-align : bottom;
+    float : left;
+}
+
+.building_now .title>h3
+{
+    display : block;
+    padding : 15px 0 8px 25px;
+}
+
+.switcher
+{
+    background-color : #eeeff1;
+    border-top : 1px solid #fffeff;
+    height : 20px;
+    border-radius : 0 0 8px 8px;
+}
+
+.switcher .sw-arrow
+{
+    display : block;
+    background : url(images/sprite-png.png) -621px -0px;
+    height : 5px;
+    width : 9px;
+    margin : 6px auto;
+}
+
+.switcher button {
+    display : block;
+    width : 100%;
+    height : 19px;
+    border-radius : 0 0 8px 8px;
+    border : none;
+    cursor : pointer;
+}
+
+
+.collapsed .news
+{
+    display : none;
+}
+
+.non-collapsed .news
+{
+    display : block;
+    overflow : visible;
+}
+
+.collapsed .sw-arrow
+{
+    background : url(images/sprite-png.png) -34px -0px;
+    display : block;
+    height : 5px;
+    width : 10px;
+    margin : 6px auto;
+}
+
+.building_now>h3
+{
+    display : inline-block;
+    margin-top : 10px;
+    width : 60%;
+    color : #3c3c3e;
+}
+
+.building_now>a
+{
+    display : inline-block;
+    width : 35%;
+    text-align : right;
+}
+
+.building_now>h3:first-child,
+.building_now>a:first-child
+{
+    margin : 30px 0 12px 0;
+}
+
+.percent
+{
+    display : inline-block;
+    width : 190px;
+    height : 22px;
+    border-radius : 7px;
+    background : #e0e0e0;
+    background : -moz-linear-gradient(top, #f5f5f5, #e0e0e0);
+    background : -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f5f5f5), color-stop(100%,#e0e0e0));
+    background : -webkit-linear-gradient(top, #f5f5f5, #e0e0e0);
+    background : -o-linear-gradient(top, #f5f5f5, #e0e0e0);
+    background : -ms-linear-gradient(top, #f5f5f5, #e0e0e0);
+    background : linear-gradient(top, #f5f5f5, #e0e0e0);
+    -ms-filter : "progid : DXImageTransform.Microsoft.gradient(startColorstr='#f5f5f5', endColorstr='#e0e0e0', GradientType=0)";
+    margin : 15px 0 0 10%;
+    border : 1px solid #d8d5ce;
+}
+
+.percent .ready
+{
+    width : 61%;
+    height : 100%;
+    background : #0d6fc7;
+    background : -moz-linear-gradient(top, #0d6fc7, #215190);
+    background : -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0d6fc7), color-stop(100%,#215190));
+    background : -webkit-linear-gradient(top, #0d6fc7, #215190);
+    background : -o-linear-gradient(top, #0d6fc7, #215190);
+    background : -ms-linear-gradient(top, #0d6fc7, #215190);
+    background : linear-gradient(top, #0d6fc7, #215190);
+    -ms-filter : "progid : DXImageTransform.Microsoft.gradient(startColorstr='#0d6fc7', endColorstr='#215190', GradientType=0)";
+    border-radius : 5px 0 0 5px;
+}
+
+.percent .ready span
+{
+    display : block;
+    height : 100%;
+    float : right;
+    padding : 2px;
+}
+
+.gotov
+{
+    display : inline-block;
+    padding-top : 20px;
+    float : left;
+}
+
+.begin_b,
+.line,
+.end_b
+{
+    display : inline-block;
+    float : left;
+    margin : 15px 0 20px;
+}
+
+.end_b
+{
+    width : 27%;
+    padding-right : 18px;
+}
+
+.begin_b
+{
+    width : 50%;
+    padding-left : 15px;
+}
+
+.line
+{
+    width : 23%;
+    max-width : 47px;
+    height : 1px;
+    background : url(images/sprite-png.png) -0px -19px;
+    margin : 40px 15px 0 0;
+}
+
+.south img
+{
+    width : 100px;
+    height : 80px;
+    margin : 12px 8px 13px 0;
+    float : left;
+}
+
+.south .news
+{
+    border-radius : 0 0 8px 8px;
+    border-bottom : none;
+}
+
+.south h3
+{
+    display : block;
+    margin : 10px 0 16px;
+}
+
+.south p b
+{
+    display : inline-block;
+}
+
+.south p
+{
+    display : inline-block;
+    width: 60%;
+}
+
+.dev
+{
+    margin : 10px 0 12px;
+}
+
+/* ----------------------------FOOTER----------------------------*/
+
+.rights
+{
+    display : inline-block;
+    margin : 20px 0 10px 25px;
+}
+
+.footer-nav
+{
+    float : right;
+}
+
+.footer-nav ul li
+{
+    display : inline-block;
+    padding-left : 17px;
+}
+
+.footer-nav ul
+{
+    margin : 20px 30px;
+}
+
+/*----------------------------ТИПОГРАФИКА----------------------------*/
+
+@font-face
+{
+    font-family : tahoma;
+    font-style : normal;
+    font-weight : normal;
+    src : url(fonts/tahoma-regular.ttf);
+
+}
+
+@font-face
+{
+    font-family : georgia;
+    font-style : normal;
+    font-weight : normal;
+    src : url(fonts/georgia-regular.ttf);
+
+}
+
+body
+{
+    color : #61625d;
+    font : normal 11px/1.5 tahoma, geneva, sans-serif;
+}
+
+ul
+{
+    list-style : none;
+}
+
+a
+{
+    text-decoration : none;
+}
+
+a:link,a:visited
+{
+    text-decoration : none;
+}
+
+a:hover,
+a:active
+{
+    text-decoration : underline;
+}
+
+/*----------------------------ТИПОГРАФИКА в NAV----------------------------*/
+
+.nav>ul>li>a
+{
+    font : normal 11px tahoma, geneva, sans-serif;
+    color : #fff;
+    padding : 15px 15px;
+    display : block;
+}
+
+.nav>ul>li>a:hover,
+.nav>ul>li:first-child>a
+{
+    background : #265581;
+    background : -moz-linear-gradient(top, #265581, #2d4766);
+    background : -webkit-gradient(linear, left top, left bottom, color-stop(0%,#265581), color-stop(100%,#2d4766));
+    background : -webkit-linear-gradient(top, #265581, #2d4766);
+    background : -o-linear-gradient(top, #265581, #2d4766);
+    background : -ms-linear-gradient(top, #265581, #2d4766);
+    background : linear-gradient(top, #265581, #2d4766);
+    -ms-filter : "progid : DXImageTransform.Microsoft.gradient(startColorstr='#265581', endColorstr='#2d4766', GradientType=0)";
+    text-decoration : none;
+    display : block;
+    padding : 15px 15px;
+    border-right : 1px solid #1e466a;
+    margin-right : -1px;
+}
+
+.nav>ul>li+li a:hover
+{
+    border-left : 1px solid #3d83c9;
+    padding : 15px 15px;
+    margin-left : -1px;
+}
+.nav>ul>li:first-child a
+{
+    border-radius : 8px 0 0 8px;
+}
+
+/*----------------------------ТИПОГРАФИКА в CONTENT----------------------------*/
+
+h3
+{
+    font : 18px georgia, "Times New Roman", times, serif;
+}
+
+.building_now .title h3,
+.building_now .news h3
+{
+    font-size : 14px;
+    color : #3f4140;
+
+}
+.breadcrumbs a
+{
+    color : #777775;
+}
+
+.karusel h2
+{
+    color : #342d25;
+    font : 18px georgia, "Times New Roman", times, serif;
+}
+
+.about_company h3,
+.last-news .title h3
+{
+    color : #342d25;
+}
+
+.news-bottom a
+{
+    color : #3669aa;
+}
+
+.press h4 a
+{
+    color : #05a738;
+    font-weight : bold;
+    text-decoration : underline;
+}
+
+.press h4 a:hover
+{
+    text-decoration : none;
+}
+
+
+.percent span
+{
+    color : #fff;
+    font-weight : bold;
+}
+
+.news p b
+{
+    color : #3d4142;
+    font-weight : bold;
+}
+
+.bdate
+{
+    color : #3f4140;
+    font : 18px georgia, "Times New Roman", times, serif;
+}
+
+.building_now address
+{
+    color : #9aa4a5;
+    font: 11px/1.5 tahoma, geneva, sans-serif;
+}
+
+.building_now a .flist,
+.about_company p a
+{
+    color : #3369a5;
+    border-bottom : 1px dashed #3369a5;
+    text-decoration : none;
+}
+
+.building_now a:hover .flist,
+.about_company p a:hover
+{
+    border-bottom : none;
+    text-decoration : none;
+    margin-bottom : 1px;
+}
+
+.building_now a:hover
+{
+    text-decoration : none;
+}
+
+/*----------------------------ТИПОГРАФИКА в FOOTER----------------------------*/
+
+.footer li a
+{
+    color : #dfe8f1;
+}
+
+.rights p
+{
+    color : #c6d8ee;
+}
